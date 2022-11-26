@@ -67,16 +67,44 @@ equalTo.addEventListener('click', function () {
 })
 
 addBtn.addEventListener('click', function () {
-    mainInput.innerText += '+'
+
+    if(mainInput.innerText.includes('+',0)){
+        return false
+    }
+    else{
+        mainInput.innerText += '+'
+    }
+    
 })
 substractBtn.addEventListener('click', function () {
-    mainInput.innerText += '-'
+
+    if(mainInput.innerText.includes('-',0)){
+        return false
+    }
+    else{
+        mainInput.innerText += '-'
+    }
+
 })
 multiplyBtn.addEventListener('click', function () {
-    mainInput.innerText += '*'
+
+    if(mainInput.innerText.includes('*',0)){
+        return false
+    }
+    else{
+        mainInput.innerText += '*'
+    }
+
 })
 divideBtn.addEventListener('click', function () {
-    mainInput.innerText += '/'
+
+    if(mainInput.innerText.includes('/',0)){
+        return false
+    }
+    else{
+        mainInput.innerText += '/'
+    }
+
 })
 
 btnAC.addEventListener('click', function () {
